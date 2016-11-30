@@ -1,0 +1,289 @@
+ [
+ 	{
+ 		"testSuite": "D UG Bachelors",
+ 		"tests": [
+ 			{
+ 			"testName": "Login",
+ 			"steps" :[
+ 					
+ 				{
+ 					"eventType" : "get",
+ 					"attr" :"http://applydevel.csu.edu.au",
+ 					"type" :"",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "wait",
+ 					"attr" :"[href*='signon']",
+ 					"type" :"css",
+ 					"value":"1000"
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"[href*='signon']",
+ 					"type" :"css",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-emailId",
+ 					"type" :"id",
+ 					"value":"tt21@tt.com"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-pindId",
+ 					"type" :"id",
+ 					"value":"123456"
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"loginBtn",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "wait",
+ 					"attr" :"",
+ 					"type" :"time",
+ 					"value":"30000"
+ 				}
+ 				
+ 			]
+ 		},
+ 		{
+ 			"testName": "Create Application Type 1",
+ 			"steps" :[
+				{
+ 					"eventType" : "click",
+ 					"attr" :"paper-button[title='start your application']",
+ 					"type" :"css",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"domesticStudent",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"domUnderGrad",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"domBachelor",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"createApplicationBtn",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "wait",
+ 					"attr" :"",
+ 					"type" :"time",
+ 					"value":"80000"
+ 				}
+ 			]
+ 		},
+ 		{
+ 			"testName": "Personal Details",
+ 			"steps" : [
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"titleDropdown",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"//paper-menu[@id='personal_prefix']//paper-item[normalize-space(.)='Mr']",
+ 					"type" :"xpath",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-firstName",
+ 					"type" :"id",
+ 					"value":"test first name"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-middleName",
+ 					"type" :"id",
+ 					"value":"test middle name"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-lastNamePersonal",
+ 					"type" :"id",
+ 					"value":"test last name"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-personal_formerName",
+ 					"type" :"id",
+ 					"value":"test former name"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-personal_dob",
+ 					"type" :"id",
+ 					"value":"12/01/2000"
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"personalGenderM",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"countryOfOriginMenu",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"//paper-dropdown-menu[@id='countryOfOriginMenu']//paper-item[normalize-space(.)='Australia']",
+ 					"type" :"xpath",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"languageHome",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"//paper-dropdown-menu[@id='languageHome']//paper-item[normalize-space(.)='English']",
+ 					"type" :"xpath",
+ 					"value":""
+ 				},
+				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-streetline1",
+ 					"type" :"id",
+ 					"value":"street line 1"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-suburb",
+ 					"type" :"id",
+ 					"value":"Wagga Wagga"
+ 				},
+				{
+ 					"eventType" : "click",
+ 					"attr" :"contactCountry",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"//paper-dropdown-menu[@id='contactCountry']//paper-item[normalize-space(.)='Australia']",
+ 					"type" :"xpath",
+ 					"value":""
+ 				},
+				{
+ 					"eventType" : "click",
+ 					"attr" :"contactState",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"//paper-dropdown-menu[@id='contactState']/paper-menu-button/iron-dropdown/div/div/paper-menu/div/paper-item[2]",
+ 					"type" :"xpath",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-postCode",
+ 					"type" :"id",
+ 					"value":"2650"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-mobile",
+ 					"type" :"id",
+ 					"value":"0400000000"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-statePhone",
+ 					"type" :"id",
+ 					"value":"2"
+ 				},
+ 				{
+ 					"eventType" : "type",
+ 					"attr" :"paper-input-phoneNumber",
+ 					"type" :"id",
+ 					"value":"69332499"
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"//paper-radio-group[@id='isIndigenous']/paper-radio-button[2]/div[1]/div[1]",
+ 					"type" :"xpath",
+ 					"value":""
+ 				},
+				{
+ 					"eventType" : "click",
+ 					"attr" :"parentOneEducation",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"//paper-dropdown-menu[@id='parentOneEducation']/paper-menu-button/iron-dropdown/div/div/paper-menu/div/paper-item[2]",
+ 					"type" :"xpath",
+ 					"value":""
+ 				},
+				{
+ 					"eventType" : "click",
+ 					"attr" :"parentTwoEducation",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"//paper-dropdown-menu[@id='parentTwoEducation']/paper-menu-button/iron-dropdown/div/div/paper-menu/div/paper-item[2]",
+ 					"type" :"xpath",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"nextStepPersonal",
+ 					"type" :"id",
+ 					"value":""
+ 				},
+ 				{
+ 					"eventType" : "wait",
+ 					"attr" :"",
+ 					"type" :"time",
+ 					"value":"100000"
+ 				}
+ 				
+ 			]
+ 		},
+ 		{
+ 			"testName": "Education Details",
+ 			"steps" : [
+ 				{
+ 					"eventType" : "click",
+ 					"attr" :"educationMenu",
+ 					"type" :"id",
+ 					"value":""
+ 				}
+ 			]
+ 		}
+
+ 	]
+ 	}
+ ]
